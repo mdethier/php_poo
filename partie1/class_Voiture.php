@@ -2,7 +2,7 @@
 
 class Voiture extends QuatreRoues {
 
-    private $nombre_pneu_neige($nombre);
+    private $nombre_pneu_neige;
 
     public function ajouter_pneu_neige($nombre) {
 
