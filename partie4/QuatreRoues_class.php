@@ -16,6 +16,9 @@ class QuatreRoues extends Vehicule
         $this->setCouleur($couleur);
     }
 
+    public function ajouter_personne($poids_personne) {
+        $this->setPoids($this->getPoids()+ $poids_personne);
+    }
     
 }
 ?>

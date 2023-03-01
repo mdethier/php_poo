@@ -1,6 +1,6 @@
 <?php 
 
-class Vehicule {
+abstract class Vehicule {
     private $couleur; 
     private $poids; 
 
@@ -23,21 +23,23 @@ class Vehicule {
          $this->poids = $poids;
     }
 
-
- 
-
-
-
     public function rouler()
     { 
         echo "Le véhicule roule ";
     } 
 
-    public function ajouter_personne($poids_personne)
-    { 
-        $this->poids = $this->poids + $poids_personne;
-    } 
+    abstract public function ajouter_personne($poids_personne);
+    
+    static public function afficher_attribut($objet) {
+
+    var_dump($objet);
+
+    }
+};
 
     
-}
+    
+
+    
+
 ?>

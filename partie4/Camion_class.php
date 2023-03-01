@@ -4,6 +4,11 @@ class Camion extends QuatreRoues {
 
     private $longueur;
 
+    public function __construct ($couleur, $poids) {
+        parent::__construct($couleur, $poids);
+
+    }
+
     public function getLongueur() {
         return $this->longueur;
     }
